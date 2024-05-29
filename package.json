@@ -1,0 +1,25 @@
+{
+  "name": "terasm-support",
+  "displayName": "Terasm support",
+  "description": "Support for the Terasm custom assembly language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "terasm",
+      "aliases": ["terasm", "terasm"],
+      "extensions": [".tasm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "terasm",
+      "scopeName": "main.tasm",
+      "path": "./syntaxes/terasm.tmLanguage.json"
+    }]
+  }
+}
